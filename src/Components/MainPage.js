@@ -8,6 +8,7 @@ import { FaBars } from "react-icons/fa";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import Projects from "./Projects/Projects";
 import CloneCoding from "./Clone/CloneCoding";
+import Close from "./Close";
 
 
 const MainPage = () => {
@@ -33,6 +34,7 @@ const MainPage = () => {
       <Skills />
       <Projects />
       <CloneCoding/>
+      <Close/>
       <button
       onClick={handleClick} 
       className="btn-up"><FaArrowAltCircleUp /></button>
