@@ -1,0 +1,117 @@
+[
+  {
+    "projectName": "DREAMLAND PARKING",
+    "projectType": "팀 프로젝트",
+    "links": {
+      "overview": "overviewDream",
+      "github": "https://github.com/eun1013/dreamland",
+      "site": "https://jujuicy97.github.io/dreamland/"
+    },
+    "skillsUsed": [
+      "React", "React-router","Supabase","SCSS","Figma"
+    ],
+    "description": "React와 Supabase를 활용해 실시간 주차 현황과 예약 기능을 구현한 웹 기반 주차 관리 시스템입니다.",
+    "duration": "25년 7월 21일 ~ 25년 8월 4일 (약 2주 진행)",
+    "contributors": "5인 참여 팀 프로젝트",
+    "role": "시간제/일일권 및 결제 금액 계산 페이지를 맡아 제작",
+    "images": {
+      "mobile": "/images/projects/main01.png",
+      "desktop": "/images/projects/main02.png",
+      "mobilealt" : "드림랜드 모바일 적용 예시 이미지",
+      "desktopalt" : "드림랜드 pc 적용 예시 이미지"
+    }
+  },
+  {
+    "projectName": "소담 상점",
+    "projectType": "팀 프로젝트",
+    "links": {
+      "overview": "overviewSodam",
+      "github": "https://github.com/eun1013/sodamshop",
+      "site": "https://eun1013.github.io/sodamshop/"
+    },
+    "skillsUsed": ["React", "React-router", "SCSS", "Figma"],
+    "description": "소담상점은 React를 기반으로, 그리드 형식의 직관적인 UI를 통해 상품 탐색부터 장바구니까지 편리한 쇼핑 경험을 제공하는 웹 기반 쇼핑몰입니다.",
+    "duration": "25년 7월 7일 ~ 25년 7월 11일",
+    "contributors": "4인 참여 팀 프로젝트",
+    "role": "페이지 상단 및 배너, 시즌 상품, 상품 상세 페이지로 이동 파트를 맡아 제작",
+    "images": {
+      "mobile": "/images/projects/main03.png",
+      "desktop": "/images/projects/main04.png",
+      "mobilealt" : "소담상점 모바일 적용 예시 이미지",
+      "desktopalt" : "소담상점 pc 적용 예시 이미지"
+    }
+  },
+  {
+    "projectName": "HELLO I’AM 말잇쮸",
+    "projectType": "개인 프로젝트",
+    "links": {
+      "overview": "overviewHello",
+      "github": "https://github.com/eun1013/endword",
+      "site": "https://eun1013.github.io/endword/"
+    },
+    "skillsUsed": ["React", "SCSS"],
+    "description": "사용자가 입력한 단어로 끝말잇기를 진행하는 간단한 웹 기반 게임으로, 직관적인 UI와 실시간 피드백을 통해 쉽고 즐거운 게임 경험을 제공합니다.",
+    "duration": "1일",
+    "contributors": "개인 프로젝트",
+    "role": "게임의 핵심 로직 설계부터 UI 구현, 그리고 웹 배포까지 전 과정을 홀로 담당",
+    "images": {
+      "desktop": "/images/projects/main05.png",
+      "desktopalt" : "말잇쮸 pc 적용 예시 이미지"
+    }
+  },
+  {
+    "projectName": "디자인 톡! 톡! QUIZ",
+    "projectType": "개인 프로젝트",
+    "links": {
+      "overview": "overviewQuiz",
+      "github": "https://github.com/eun1013/quiz",
+      "site": "https://eun1013.github.io/quiz/"
+    },
+    "skillsUsed": ["React", "SCSS"],
+    "description": "디자인 역사, 컬러 심리학, 웹디자인 기본 용어 등 다양한 카테고리로 구성된 웹 기반 퀴즈 서비스입니다. 사용자가 쉽고 재미있게 디자인 지식을 학습하고 점검할 수 있도록 직관적인 UI/UX에 중점을 두었습니다.",
+    "duration": "1일",
+    "contributors": "개인 프로젝트",
+    "role": "기획부터 UI 디자인, 프론트엔드 개발, 그리고 배포까지 프로젝트 전반을 단독으로 진행",
+    "images": {
+      "desktop": "/images/projects/main06.png",
+      "desktopalt" : "디자인 톡톡 퀴즈 pc 적용 예시 이미지"
+    }
+  },
+    {
+    "projectName": "블로그형 웹페이지 (Timeless Treasures)",
+    "projectType": "개인 프로젝트",
+    "links": {
+      "overview": "overviewBlog",
+      "github": "https://github.com/eun1013/eun1013.github.io/tree/main/project",
+      "site": "https://eun1013.github.io/project/index.html"
+    },
+    "skillsUsed": ["Photoshop", "Figma", "HTML", "CSS"],
+    "description": "'Timeless Treasures'는 화병과 같은 홈 인테리어 제품을 판매하는 온라인 쇼핑몰의 상세 페이지입니다. 사용자 친화적인 UI와 세련된 디자인으로 제품의 고급스러움을 효과적으로 전달하고 있습니다.",
+    "duration": "25년 7월 7일 ~ 25년 7월 11일",
+    "contributors": "개인 프로젝트",
+    "role": "디자인 기획부터 HTML/CSS 코딩, 배포까지 전 과정을 혼자서 진행",
+    "images": {
+      "mobile": "/images/projects/main07.png",
+      "desktop": "/images/projects/main08.png",
+      "mobilealt" : "블로그형 웹페이지 모바일 적용 예시 이미지",
+      "desktopalt" : "블로그형 웹페이지 적용 예시 이미지"
+    }
+  },
+  {
+    "projectName": "Figma 기획안 (Sign talk)",
+    "projectType": "개인 프로젝트",
+    "links": {
+      "overview": "overviewFigma",
+      "site": "https://www.figma.com/design/6OocKNzZvZCt7NH792N6mP/Figma-%EA%B8%B0%ED%9A%8D%EC%95%88?node-id=1-938&t=MQGvnQAvHxzHfOXP-1"
+    },
+    "skillsUsed": ["Figma", "Illustrator"],
+    "description": "Figma를 활용하여 모바일 본인 인증과 시간/장소 제약 없는 안전한 서류 수령 경험을 설계한 UI/UX 기획 프로젝트입니다.", 
+    "duration": "2일",
+    "contributors": "개인 프로젝트",
+    "role": "기획 의도 도출부터 사용자 경험(UX) 분석, 핵심 기능 UI 설계, 디자인 가이드라인 제시 및 프로토타입 제작까지 전 과정을 단독으로 수행",
+    "images": {
+      "desktop": "/images/projects/main09.png",
+      "desktopalt" : "피그마 기획안 pc 예시 이미지"
+    }
+  }
+]

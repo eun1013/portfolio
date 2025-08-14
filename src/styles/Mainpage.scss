@@ -1,0 +1,39 @@
+.mainpage {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    position: relative;
+    overflow-x: hidden;
+  .btn-menu {
+    position: absolute;
+    left: 3rem;
+    border: none;
+    z-index: 1000;
+
+    &:hover {
+      filter: brightness(80%);
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+
+    svg {
+      position: fixed;
+      color: var(--color-text);
+      font-size: 4rem;
+    }
+  }
+
+  .btn-up {
+    border: none;
+    background-color: transparent;
+    color: var(--color-text);
+    font-size: 5rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 1.5rem;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}

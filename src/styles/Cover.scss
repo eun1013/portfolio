@@ -1,0 +1,33 @@
+.cover{
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    padding: 0 3rem;
+    .cover-ment{
+        @include flex-layout(column,center,center);
+        position: relative;
+        h3{
+            margin-top: 20rem;
+            text-align: center;
+            color: var(--color-text);
+            @include font-h3;
+            text-shadow: 5px 5px 3px #000000;
+        }
+        img{
+            position: absolute;
+            top: -11rem;
+            width: 70rem;
+            z-index: 1;
+        }
+        p{
+            position: absolute;
+            bottom: -72rem;
+            left: -4rem;
+            font-size: 32rem;
+            color: transparent;
+            -webkit-text-stroke:2px var(--color-sub) ;
+            white-space: nowrap;
+            display: inline-block;
+        }
+    }
+}

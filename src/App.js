@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.scss";
+import MainPage from "./Components/MainPage";
+import MenuBar from "./Components/MenuBar";
+import OverviewDream from "./Components/Overview/OverviewDream";
+import OverviewSodam from "./Components/Overview/OverviewSodam";
+import OverviewHello from "./Components/Overview/OverviewHello";
+import OverviewQuiz from "./Components/Overview/OverviewQuiz";
+import OverviewBlog from "./Components/Overview/OverviewBlog";
+import OverviewFigma from "./Components/Overview/OverviewFigma";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="menu" element={<MenuBar/>}/>
+        <Route path="/" element={<MainPage/>}/>
+        <Route path="/overviewDream" element={<OverviewDream/>}/>
+        <Route path="/overviewSodam" element={<OverviewSodam/>}/>
+        <Route path="/overviewHello" element={<OverviewHello/>}/>
+        <Route path="/overviewQuiz" element={<OverviewQuiz/>}/>
+        <Route path="/overviewBlog" element={<OverviewBlog/>}/>
+        <Route path="/overviewFigma" element={<OverviewFigma/>}/>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
