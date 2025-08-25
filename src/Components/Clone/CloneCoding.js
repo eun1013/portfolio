@@ -42,11 +42,13 @@ const ProjectPopup = ({ project, onClose }) => {
             </div>
           ))}
         </div>
-        <a href={project.link}>
+        <a 
+        className="popup-image"
+        href={project.link}>
         <img
           src={`${process.env.PUBLIC_URL}${project.image}`}
           alt={project.title}
-          className="popup-image"
+          
         />
         </a>
       </div>

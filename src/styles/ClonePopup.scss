@@ -9,53 +9,80 @@
     z-index: 1000;
     padding: 20px;
     color: var(--color-primary);
-    .popup-overlay{
+
+    .popup-overlay {
         width: 95%;
-        height: 90%;
+        height: 95%;
         margin-top: 5rem;
         background-color: #FFFFFF;
-        @include flex-layout;
-        line-height: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 3rem;
         border-radius: 5rem;
         border: 1px solid var(--color-primary);
-    .project-popup {
-        position: relative;
-        padding-left: 5rem;
-        word-break: keep-all;
-        h2 {
-            font-size: 6rem;
-            line-height: 1.5;
+
+        .project-popup {
+            flex: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            word-break: keep-all;
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+            gap: 2rem;
+
+            h2 {
+                font-size: 6rem;
+            }
+
+            .popup-section {
+                h3 {
+                    @include font-h3;
+                }
+
+                li,
+                p {
+                    font-size: 1.5rem;
+                    line-height: 1.6
+                }
+            }
+
+            .close-btn {
+                @include font-h2;
+                color: var(--color-primary);
+                position: fixed;
+                top: -2rem;
+                right: 3rem;
+
+                &:hover {
+                    filter: brightness(40%);
+                }
+            }
         }
 
-        .popup-section {
-            line-height: 1.5;
-            h3{
-                @include font-h3;
-            }
-            li,p{
-                font-size: 1.5rem;
-            }
-        }
+        .popup-image {
+            flex: 1;
+            text-align: right;
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s;
 
-        .close-btn {
-            @include font-h2;
-            color: var(--color-primary);
-            position: fixed;
-            top: -2rem;
-            right: 3rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                margin-left: auto;
+
+            }
 
             &:hover {
-                filter: brightness(40%);
+                transform: scale(1.05);
+                filter: brightness(60%);
             }
         }
-    }
-    .popup-image {
-        margin: 5rem;
-        width: 50rem;
-        &:hover{
-            transform: scale(1.1);
-            // filter: brightness(60%);
-        }
-    }
     }
 }
