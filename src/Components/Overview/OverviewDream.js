@@ -7,10 +7,10 @@ const OverviewDream = () => {
   const project = DreamData.main_project_1;
   const navigate = useNavigate('');
 
-  useEffect(()=>{
+    useEffect(()=>{
         window.scrollTo(0,0);
     },[]);
-    
+
   return (
     <div className="overviewDream">
       <button

@@ -11,7 +11,7 @@ import MainLayout from "./Components/MainLayout";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter scrollRestoration="manual">
       <Routes>
         <Route path="/*" element={<MainLayout/>}/>
         <Route path="/overviewDream" element={<OverviewDream/>}/>
@@ -20,6 +20,7 @@ const App = () => {
         <Route path="/overviewQuiz" element={<OverviewQuiz/>}/>
         <Route path="/overviewBlog" element={<OverviewBlog/>}/>
         <Route path="/overviewFigma" element={<OverviewFigma/>}/>
+        {/* <Route path="*" element={<MainLayout/>}/>  */}
       </Routes>
     </BrowserRouter>
   );

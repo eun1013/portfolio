@@ -3,7 +3,7 @@
     "projectName": "DREAMLAND PARKING",
     "projectType": "팀 프로젝트",
     "links": {
-      "overview": "overviewDream",
+      "overview": "/overviewDream",
       "github": "https://github.com/eun1013/dreamland",
       "site": "https://jujuicy97.github.io/dreamland/"
     },

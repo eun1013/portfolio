@@ -1,10 +1,8 @@
-import { useNavigate } from "react-router-dom";
+
 import Cover from "./Cover";
 import Aboutme from "./Aboutme/Aboutme";
 import AboutmeQnA from "./Aboutme/AboutmeQnA";
 import Skills from "./Skills/Skills";
-import { FaBars } from "react-icons/fa";
-import { FaArrowAltCircleUp } from "react-icons/fa";
 import Projects from "./Projects/Projects";
 import CloneCoding from "./Clone/CloneCoding";
 import Close from "./Close";
@@ -23,7 +21,6 @@ const MainPage = ({ scrollTarget }) => {
     }
   }, [scrollTarget]);
 
-  const navigate = useNavigate('');
   return (
     <div className="mainpage">
       <div id="home">
