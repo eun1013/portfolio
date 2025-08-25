@@ -39,10 +39,13 @@ const CloneCoding = () => {
                   <p>{project.description}</p>
                 </div>
               </div>
+              <div className="card">
               <img
                 src={`${process.env.PUBLIC_URL}${project.image}`}
                 alt={project.title}
               />
+              <button className="overlay-btn">OVERVIEW</button>
+              </div>
               <div className="project-links">
                 {project.links?.github && (
                   <button>

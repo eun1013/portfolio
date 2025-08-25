@@ -10,7 +10,7 @@
         width: 90%;
         height: 70%;
         display: flex;
-        margin: 3rem 7rem;
+        margin: 8rem 7rem;
     .line-bar{
         margin: 2.4rem 3rem;
         width: 5px;
@@ -18,7 +18,7 @@
         background-color: var(--color-text);
         }
         .main-category-tabs{
-            width: 15%;
+            width: 25rem;
             button{
                 color: var(--color-text);
                 @include font-h3;
@@ -44,7 +44,7 @@
         img{
             width: 8rem;
             height: 8rem;
-            margin-bottom: 2rem;
+            margin-bottom: 0.5rem;
         }
         p{
             width: 80%;

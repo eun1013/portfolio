@@ -18,11 +18,12 @@
     font-style: normal;
 }
 
-html{ font-size: 62.5%; }
+html{ font-size: 62.5%;
+background-color: var(--color-primary); }
 body{
     font-family: 'Paperlogy-8ExtraBold', sans-serif;
     font-weight: 700; //기본 두께(변경 가능)
-    background-color: var(--color-primary);
     height: 100%;
+    width: 100%;
     // overflow: hidden;
 }

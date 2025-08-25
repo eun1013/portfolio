@@ -11,8 +11,9 @@ const Clone = () => {
   return (
     <div className="project-detail">
       <h1>{project.title}</h1>
+      <div className="card">
       <img src={project.image} alt={project.title} />
-
+      </div>
       {project.sections.map((section, idx) => (
         <div key={idx}>
           <h3>{section.subtitle}</h3>

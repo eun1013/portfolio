@@ -48,13 +48,11 @@ useEffect(() => {
 
   return (
     <div className="cover">
-      <div className="cover-ment">
         <h3 ref={titleRef}>사용자의 마음에 공감하고<br/> 꼼꼼하게 설계하는 프론트엔드 개발자 장성은 입니다.</h3>
         <img
         ref={imgRef} 
         src={`${process.env.PUBLIC_URL}/images/8617903.png`}/>
         <p ref={portfolioRef}>PORTFOLIO</p>
-      </div>
     </div>
   );
 };

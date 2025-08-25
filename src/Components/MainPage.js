@@ -9,6 +9,7 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 import Projects from "./Projects/Projects";
 import CloneCoding from "./Clone/CloneCoding";
 import Close from "./Close";
+import Practical from "./Practical";
 
 
 const MainPage = () => {
@@ -34,6 +35,7 @@ const MainPage = () => {
       <Skills />
       <Projects />
       <CloneCoding/>
+      <Practical/>
       <Close/>
       <button
       onClick={handleClick} 
