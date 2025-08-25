@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import SodamData from "../../data/OverviewSodam.json"; // JSON 파일 경로
 import { GiCancel } from "react-icons/gi";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 const OverviewSodam = () => {
   const project = SodamData.main_project_1;
@@ -75,12 +75,12 @@ const OverviewSodam = () => {
             {sec.fonts && (
                <ul className="design-font">
                 {sec.fonts.map((font, i) => (
-                  <>
+                  <React.Fragment key={i}>
                   <li 
                   className="font" 
-                  key={i}><strong>{font.name} </strong></li>
-                  <li key={i}>{font.description}</li>
-                  </>
+                  ><strong>{font.name} </strong></li>
+                  <li>{font.description}</li>
+                  </React.Fragment>
                 ))}
               </ul>
             )}

@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import HelloData from "../../data/OverviewHello.json";
 import { GiCancel } from "react-icons/gi";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 const OverviewHello = () => {
   const project = HelloData.main_project_1;
   const navigate = useNavigate();
 
-  useEffect(()=>{
-        window.scrollTo(0,0);
-    },[]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="overviewHello">
@@ -51,50 +51,50 @@ const OverviewHello = () => {
       </section>
 
       {/* DESIGN SYSTEM */}
-    <h1>{project.design_system.title}</h1>
+      <h1>{project.design_system.title}</h1>
       <section className="overview-design">
         <div className="design-left">
-        {project.design_system.sections.map((sec, idx) => (
-          <div key={idx}>
-            <h2>{sec.subtitle}</h2>
-            {sec.colors && (
-              <div className="design-color">
-                {sec.colors.map((color, i) => (
-                  <div
-                    className="color"
-                    key={i}
-                    style={{ backgroundColor: color }}
-                  />
-                ))}
-              </div>
-            )}
-            {sec.description && <p>{sec.description}</p>}
-            {sec.fonts && (
-              <ul className="design-font">
-                {sec.fonts.map((font, i) => (
-                  <>
-                  <li 
-                  className="font" 
-                  key={i}><strong>{font.name} </strong></li>
-                  <li key={i}>{font.description}</li>
-                  </>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
+          {project.design_system.sections.map((sec, idx) => (
+            <div key={idx}>
+              <h2>{sec.subtitle}</h2>
+              {sec.colors && (
+                <div className="design-color">
+                  {sec.colors.map((color, i) => (
+                    <div
+                      className="color"
+                      key={i}
+                      style={{ backgroundColor: color }}
+                    />
+                  ))}
+                </div>
+              )}
+              {sec.description && <p>{sec.description}</p>}
+              {sec.fonts && (
+                <ul className="design-font">
+                  {sec.fonts.map((font, i) => (
+                    <React.Fragment key={i}>
+                      <li
+                        className="font"
+                      ><strong>{font.name} </strong></li>
+                      <li>{font.description}</li>
+                    </React.Fragment>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
         </div>
         {/* 디자인 시스템 이미지 */}
         <div className="design-right">
-        {project.design_system.image_file &&
-          project.design_system.image_file.map((img, idx) => (
-            <img
-              key={idx}
-              src={`${process.env.PUBLIC_URL}${img}`}
-              alt={`Design system ${idx + 1}`}
-            />
-          ))}
-          </div>
+          {project.design_system.image_file &&
+            project.design_system.image_file.map((img, idx) => (
+              <img
+                key={idx}
+                src={`${process.env.PUBLIC_URL}${img}`}
+                alt={`Design system ${idx + 1}`}
+              />
+            ))}
+        </div>
       </section>
 
       {/* RETROSPECTIVE */}

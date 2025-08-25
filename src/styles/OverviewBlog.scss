@@ -12,7 +12,7 @@
     font-size: 4rem;
     margin-top: 2rem;
     color: var(--color-primary);
-
+    z-index: 100;
     &:hover {
       filter: brightness(40%);
     }
@@ -20,13 +20,15 @@
 
   h1 {
     @include font-h1;
-    color: var(--color-primary);
-    padding: 3rem;
+    color:#BAA594;
+    padding: 3rem 6rem; 
+    position: relative;
+    
   }
 
   h2 {
     @include font-h3;
-    color: rgb(36, 36, 36);
+    color:#BAA594;
     margin-top: 1rem;
   }
 
@@ -45,9 +47,8 @@
 
     .project-left {
       flex: 1;
-      padding: 5rem 0;
-      padding-left: 5rem;
-  
+      padding: 6rem 0;
+      padding-left: 6rem;
       line-height: 2;
 
     }
@@ -64,10 +65,10 @@
       position: relative;
         img{
           &:nth-child(1){
-            width: 24rem;
+            width: 21rem;
           }
           &:nth-child(2){
-            width: 80rem;
+            width: 70rem;
           }
         }
     }
@@ -99,7 +100,7 @@
     }
   }
   .overview-solution{
-      padding: 5rem;
+      padding: 6rem;
       line-height: 2;
   }
 }

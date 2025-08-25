@@ -9,7 +9,9 @@ const Practical = () => {
                 {
                     data.projects.map((item, idx) => {
                         return (
-                            <div className="practical-contents">
+                            <div
+                            key={idx} 
+                            className="practical-contents">
                                 <img
                                     src={`${process.env.PUBLIC_URL}${item.image}`}
                                     alt={item.alts} />

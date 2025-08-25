@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import DreamData from "../../data/OverviewDream.json";
 import { GiCancel } from "react-icons/gi";
-import { useEffect } from "react";
+import  React, { useEffect } from "react";
 
 const OverviewDream = () => {
   const project = DreamData.main_project_1;
   const navigate = useNavigate('');
 
- useEffect(()=>{
+  useEffect(()=>{
         window.scrollTo(0,0);
     },[]);
     
@@ -63,12 +63,11 @@ const OverviewDream = () => {
             {sec.fonts && (
               <ul className="design-font">
                 {sec.fonts.map((font, i) => (
-                  <>
-                  <li 
-                  className="font" 
-                  key={i}><strong>{font.name}</strong></li>
-                  <li key={i}>{font.description}</li>
-                  </>
+                  <React.Fragment key={i}>
+                  <li className="font">
+                    <strong>{font.name}</strong></li>
+                  <li>{font.description}</li>
+                  </React.Fragment>
                 ))}
               </ul>
             )}

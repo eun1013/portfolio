@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import BlogData from "../../data/OverviewBlog.json";
 import { GiCancel } from "react-icons/gi";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 const OverviewBlog = () => {
   const project = BlogData.main_project_4;
@@ -73,12 +73,12 @@ const OverviewBlog = () => {
             {sec.fonts && (
               <ul className="design-font">
                 {sec.fonts.map((font, i) => (
-                  <>
+                  <React.Fragment key={i}>
                   <li 
                   className="font" 
-                  key={i}><strong>{font.name} </strong></li>
-                  <li key={i}>{font.description}</li>
-                  </>
+                  ><strong>{font.name} </strong></li>
+                  <li>{font.description}</li>
+                  </React.Fragment>
                 ))}
               </ul>
             )}

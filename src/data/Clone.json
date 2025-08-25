@@ -3,11 +3,11 @@
     "number": 1,
     "title": "넷플릭스 클론 사이트",
     "image": "/images/clone/clone05.png",
-
+    "link":"https://eun1013.github.io/netflix/",
     "sections": [
       {
         "subtitle": "제작에 사용한 스킬",
-        "content": ["React", "JavaScript", "SCSS"]
+        "content": "React, JavaScript, SCSS"
       },
       {
         "subtitle": "프로젝트 간단한 설명",
@@ -23,10 +23,10 @@
           "· UI 디자인 방식 : 넷플릭스 웹사이트의 시각적 요소들을 분석하여, React 컴포넌트 기반으로 한 디자인을",
           "미니멀하면서도 사용자에게 몰입감을 주는 넷플릭스 특유의 UI/UX를 학습하고 구현하는 데 집중하였습니다.",
           "· 레이아웃 제작 방식 : React 컴포넌트 기반으로 각 섹션(헤더, 배너, 콘텐츠 리스트 등)을 모듈화하여 구현했습니다.",
-          "유연한 레이아웃을 통해 다양한 화면 크기에서도 일관된 사용자 경험을 제공했습니다."],
-
+          "유연한 레이아웃을 통해 다양한 화면 크기에서도 일관된 사용자 경험을 제공했습니다."
+        ],
         "content2": [
-            "· 플러그인 : React, sass, 오픈 API",
+          "· 플러그인 : React, sass, 오픈 API",
           "· 제작기간 : 2일",
           "· 제작 참여율 : 100%(개인프로젝트)",
           "· 배포상황 : GitHub",
@@ -36,14 +36,15 @@
       }
     ]
   },
-[
   {
     "number": 2,
     "title": "Momentum 클론 사이트",
+    "image": "/images/clone/clone06.png",
+    "link":"https://eun1013.github.io/myday/",
     "sections": [
       {
         "subtitle": "제작에 사용된 스킬",
-        "content": ["React", "JavaScript", "SCSS"]
+        "content": "React, JavaScript, SCSS"
       },
       {
         "subtitle": "프로젝트 간단한 설명",
@@ -58,9 +59,10 @@
         "subtitle": "프로젝트 개요",
         "content": [
           "· UI 디자인 방식 : Google Momentum의 미니멀하고 직관적인 디자인을 모티브로 React 컴포넌트 기반 UI를 설계했습니다. 사용자가 정보에 집중할 수 있도록 깔끔한 레이아웃과 감성적인 배경 이미지 활용에 주력했습니다.",
-          "· 레이아웃 제작 방식 : React 컴포넌트 기반으로 각 섹션(시간, 날씨, 투두리스트 등)을 모듈화하여 구현했습니다."],
-         "content2": [
-        "· 플러그인 : react-icons, moment, Open Weather API",
+          "· 레이아웃 제작 방식 : React 컴포넌트 기반으로 각 섹션(시간, 날씨, 투두리스트 등)을 모듈화하여 구현했습니다."
+        ],
+        "content2": [
+          "· 플러그인 : react-icons, moment, Open Weather API",
           "· 제작기간 : 1일",
           "· 제작 참여율 : 100%(개인 프로젝트)",
           "· 배포방식 : GitHub",
@@ -68,34 +70,33 @@
           "· SITE URL : https://eun1013.github.io/myday/"
         ]
       }
-    ],
-    "image": "/images/clone/clone06.png"
-  }
-],
-[
+    ]
+  },
   {
     "number": 3,
     "title": "에어비앤비 클론 사이트",
+    "image": "/images/clone/clone07.png",
+    "link":"https://eun1013.github.io/airbnb/index.html",
     "sections": [
       {
         "subtitle": "제작에 사용된 스킬",
-        "content": ["HTML5", "CSS3", "반응형 웹 디자인", "Figma"]
+        "content": "HTML5, CSS3, 반응형 웹 디자인, Figma"
       },
       {
         "subtitle": "프로젝트 간단한 설명",
         "content": [
           "· 클론한 사이트 명 : 에어비앤비 (https://www.airbnb.co.kr/)",
           "· 에어비앤비 웹사이트의 메인 화면 UI/UX를 클론 코딩하여, 원본의 시각적 디자인과 정보 구조를 충실하게 재현한 웹 프로젝트입니다.",
-          "다양한 디바이스 환경에 최적화된 반응형 디자인 구현에 중점을 두었습니다.",
+          "· 다양한 디바이스 환경에 최적화된 반응형 디자인 구현에 중점을 두었습니다.",
           "· HTML/CSS만을 활용하여 복잡하고 세련된 반응형 웹사이트 UI를 재현하는 디자인 충실도와 구조화된 스타일링 기법을 익혔습니다."
         ]
       },
       {
         "subtitle": "프로젝트 개요",
         "content": [
-          "· UI 디자인 방식 : 에어비앤비 웹사이트의 실제 디자인을 분석하여, 이미지, 텍스트, 아이콘, 카드 형태의 숙소 목록 등 모든 UI 요소들을 원본에 가깝게 재현했습니다.",
+          "· UI 디자인 방식 : 에어비앤비 웹사이트의 실제 디자인을 분석하여, 이미지, 텍스트, 아이콘, 카드 형태의 숙소 목록 등", "모든 UI 요소들을 원본에 가깝게 재현했습니다.",
           "· 레이아웃 제작 방식 : HTML 시맨틱 태그와 CSS의 Flexbox, Grid 같은 레이아웃 기법을 적극 활용하여 구조화되었습니다.",
-          "특히, 다양한 화면 크기(데스크톱, 태블릿, 모바일)에 따라 숙소 카드 배열이 유연하게 변화하는 완성도 높은 반응형 레이아웃으로 제작되었습니다."
+          "특히, 다양한 화면 크기(데스크톱, 태블릿, 모바일)에 따라 숙소 카드 배열이 유연하게 변화하는 완성도 높은","반응형 레이아웃으로 제작되었습니다."
         ],
         "content2": [
           "· 제작기간 : 2일",
@@ -105,18 +106,17 @@
           "· SITE URL : https://eun1013.github.io/airbnb/index.html"
         ]
       }
-    ],
-    "image": "/images/clone/clone07.png"
-  }
-],
-[
+    ]
+  },
   {
     "number": 4,
     "title": "TESLA 클론 사이트",
+    "image": "/images/clone/clone08.png",
+    "link":"https://eun1013.github.io/tesla/index.html",
     "sections": [
       {
         "subtitle": "제작에 사용된 스킬",
-        "content": ["HTML5", "CSS3", "반응형 웹 디자인", "Figma"]
+        "content": "HTML5, CSS3, 반응형 웹 디자인, Figma"
       },
       {
         "subtitle": "프로젝트 간단한 설명",
@@ -124,7 +124,6 @@
           "· 클론한 사이트 명 : 테슬라 (https://www.tesla.com/ko_kr)",
           "· 테슬라 공식 웹사이트의 핵심 디자인과 시각적 경험을 재현한 클론 코딩 프로젝트입니다.",
           "대형 이미지와 미니멀한 UI를 통해 브랜드 특유의 강렬하고 고급스러운 분위기를 웹으로 옮기는 데 집중했습니다.",
-
           "· 대형 이미지와 미니멀리즘 디자인을 통해 브랜드의 시각적 아이덴티티를 웹으로 재현하고 효과적으로 콘텐츠를 배치하는 방법을 익혔습니다."
         ]
       },
@@ -143,8 +142,6 @@
           "· SITE URL : https://eun1013.github.io/tesla/index.html"
         ]
       }
-    ],
-    "image": "/images/clone/clone08.png"
+    ]
   }
-]
 ]

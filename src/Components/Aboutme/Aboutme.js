@@ -3,7 +3,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Aboutme = () => {
-  gsap.registerPlugin(ScrollTrigger);
   const navigate = useNavigate('');
     return (
         <div className="aboutme">

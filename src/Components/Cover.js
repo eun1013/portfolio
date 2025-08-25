@@ -16,7 +16,7 @@ const Cover = () => {
   
 useEffect(() => {
     // 요소들이 모두 렌더링된 후에만 실행되도록
-    if (titleRef.current && imgRef.current && portfolioRef.current && portfolioRef.current) 
+    if (titleRef.current && imgRef.current && portfolioRef.current)
     {
       const tl = gsap.timeline();
 
@@ -37,12 +37,6 @@ useEffect(() => {
         {y: 0, opacity: 1, duration: 2, ease: "power3.out"},
         "-=3"
       );
-      
-      tl.fromTo(menubarRef.current,
-        {x:-20, opacity:0},
-        {x:0,opacity:1,duration:1,ease:"power2,out"},
-        "-=1"
-      );
     }
   }, []);
 
@@ -51,7 +45,9 @@ useEffect(() => {
         <h3 ref={titleRef}>사용자의 마음에 공감하고<br/> 꼼꼼하게 설계하는 프론트엔드 개발자 장성은 입니다.</h3>
         <img
         ref={imgRef} 
-        src={`${process.env.PUBLIC_URL}/images/8617903.png`}/>
+        src={`${process.env.PUBLIC_URL}/images/8617903.png`}
+        alt="커버 본인 이미지"
+        />
         <p ref={portfolioRef}>PORTFOLIO</p>
     </div>
   );

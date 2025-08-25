@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import FigmaData from "../../data/OverviewFigma.json";
 import { GiCancel } from "react-icons/gi";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 const OverviewFigma = () => {
   const project = FigmaData.main_project_1;
@@ -63,12 +63,12 @@ const OverviewFigma = () => {
             {sec.fonts && (
               <ul className="design-font">
                 {sec.fonts.map((font, i) => (
-                  <>
+                  <React.Fragment key={i}>
                   <li 
                   className="font" 
-                  key={i}><strong>{font.name}</strong></li>
-                  <li key={i}>{font.description}</li>
-                  </>
+                  ><strong>{font.name}</strong></li>
+                  <li>{font.description}</li>
+                  </React.Fragment>
                 ))}
               </ul>
             )}

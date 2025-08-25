@@ -12,6 +12,7 @@
     font-size: 4rem;
     margin-top: 2rem;
     color: var(--color-primary);
+    z-index: 100;
 
     &:hover {
       filter: brightness(40%);
@@ -20,13 +21,14 @@
 
   h1 {
     @include font-h1;
-    color: var(--color-primary);
-    padding: 3rem;
+    color: #36454F;
+    padding: 3rem 6rem;
+
   }
 
   h2 {
     @include font-h3;
-    color: rgb(36, 36, 36);
+    color: #36454F;
     margin-top: 2rem;
   }
 
@@ -45,14 +47,13 @@
 
     .project-left {
       flex: 1;
-      padding: 5rem;
+      padding: 6rem;
       line-height: 2;
-
     }
   }
 
   .overview-design {
-    padding: 5rem;
+    padding: 6rem;
     line-height: 2;
     @include flex-layout;
     .design-left{
@@ -60,6 +61,7 @@
     }
     .design-right{
         img{
+            // width: 25rem;
             margin: 0 1.5rem;
         }
     }
@@ -83,15 +85,9 @@
       }
     }
   }
-  .overview-user{
-    width: 80%;
-    margin: 8rem auto;
-    img{
-      width: 100%;
-    }
-  }
+
   .overview-solution{
-      padding: 5rem;
+      padding: 6rem;
       line-height: 2;
   }
 }

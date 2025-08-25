@@ -1,6 +1,7 @@
 @import "./styles/global.scss";
 
 //컴포넌트
+@import "./styles/MainLayout.scss";
 @import "./styles/Mainpage.scss";
 @import "./styles/Cover.scss";
 @import "./styles/Menubar.scss";
@@ -14,6 +15,7 @@
 @import "./styles/OverviewQuiz.scss";
 @import "./styles/OverviewBlog.scss";
 @import "./styles/OverviewFigma.scss";
+@import "./styles/ClonePopup.scss";
 @import "./styles/CloneCoding.scss";
 @import "./styles/Practical.scss";
 @import "./styles/Close.scss";

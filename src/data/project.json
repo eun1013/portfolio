@@ -8,7 +8,7 @@
       "site": "https://jujuicy97.github.io/dreamland/"
     },
     "skillsUsed": [
-      "React", "React-router","Supabase","SCSS","Figma"
+      "React, React-router, Supabase, SCSS, Figma"
     ],
     "description": "React와 Supabase를 활용해 실시간 주차 현황과 예약 기능을 구현한 웹 기반 주차 관리 시스템입니다.",
     "duration": "25년 7월 21일 ~ 25년 8월 4일 (약 2주 진행)",
@@ -29,7 +29,7 @@
       "github": "https://github.com/eun1013/sodamshop",
       "site": "https://eun1013.github.io/sodamshop/"
     },
-    "skillsUsed": ["React", "React-router", "SCSS", "Figma"],
+    "skillsUsed": ["React, React-router, SCSS, Figma"],
     "description": "소담상점은 React를 기반으로, 그리드 형식의 직관적인 UI를 통해 상품 탐색부터 장바구니까지 편리한 쇼핑 경험을 제공하는 웹 기반 쇼핑몰입니다.",
     "duration": "25년 7월 7일 ~ 25년 7월 11일",
     "contributors": "4인 참여 팀 프로젝트",
@@ -49,7 +49,7 @@
       "github": "https://github.com/eun1013/endword",
       "site": "https://eun1013.github.io/endword/"
     },
-    "skillsUsed": ["React", "SCSS"],
+    "skillsUsed": ["React, SCSS"],
     "description": "사용자가 입력한 단어로 끝말잇기를 진행하는 간단한 웹 기반 게임으로, 직관적인 UI와 실시간 피드백을 통해 쉽고 즐거운 게임 경험을 제공합니다.",
     "duration": "1일",
     "contributors": "개인 프로젝트",
@@ -67,7 +67,7 @@
       "github": "https://github.com/eun1013/quiz",
       "site": "https://eun1013.github.io/quiz/"
     },
-    "skillsUsed": ["React", "SCSS"],
+    "skillsUsed": ["React, SCSS"],
     "description": "디자인 역사, 컬러 심리학, 웹디자인 기본 용어 등 다양한 카테고리로 구성된 웹 기반 퀴즈 서비스입니다. 사용자가 쉽고 재미있게 디자인 지식을 학습하고 점검할 수 있도록 직관적인 UI/UX에 중점을 두었습니다.",
     "duration": "1일",
     "contributors": "개인 프로젝트",
@@ -85,7 +85,7 @@
       "github": "https://github.com/eun1013/eun1013.github.io/tree/main/project",
       "site": "https://eun1013.github.io/project/index.html"
     },
-    "skillsUsed": ["Photoshop", "Figma", "HTML", "CSS"],
+    "skillsUsed": ["Photoshop, Figma, HTML, CSS"],
     "description": "'Timeless Treasures'는 화병과 같은 홈 인테리어 제품을 판매하는 온라인 쇼핑몰의 상세 페이지입니다. 사용자 친화적인 UI와 세련된 디자인으로 제품의 고급스러움을 효과적으로 전달하고 있습니다.",
     "duration": "25년 7월 7일 ~ 25년 7월 11일",
     "contributors": "개인 프로젝트",
@@ -104,7 +104,7 @@
       "overview": "overviewFigma",
       "site": "https://www.figma.com/design/6OocKNzZvZCt7NH792N6mP/Figma-%EA%B8%B0%ED%9A%8D%EC%95%88?node-id=1-938&t=MQGvnQAvHxzHfOXP-1"
     },
-    "skillsUsed": ["Figma", "Illustrator"],
+    "skillsUsed": ["Figma, Illustrator"],
     "description": "Figma를 활용하여 모바일 본인 인증과 시간/장소 제약 없는 안전한 서류 수령 경험을 설계한 UI/UX 기획 프로젝트입니다.", 
     "duration": "2일",
     "contributors": "개인 프로젝트",
