@@ -2,7 +2,7 @@
   {
     "number": 1,
     "title": "넷플릭스 클론 사이트",
-    "image": "/images/clone/clone05.png",
+    "image": "/images/Clone/clone05.png",
     "link":"https://eun1013.github.io/netflix/",
     "sections": [
       {
@@ -39,7 +39,7 @@
   {
     "number": 2,
     "title": "Momentum 클론 사이트",
-    "image": "/images/clone/clone06.png",
+    "image": "/images/Clone/clone06.png",
     "link":"https://eun1013.github.io/myday/",
     "sections": [
       {
@@ -75,7 +75,7 @@
   {
     "number": 3,
     "title": "에어비앤비 클론 사이트",
-    "image": "/images/clone/clone07.png",
+    "image": "/images/Clone/clone07.png",
     "link":"https://eun1013.github.io/airbnb/index.html",
     "sections": [
       {
@@ -111,7 +111,7 @@
   {
     "number": 4,
     "title": "TESLA 클론 사이트",
-    "image": "/images/clone/clone08.png",
+    "image": "/images/Clone/clone08.png",
     "link":"https://eun1013.github.io/tesla/index.html",
     "sections": [
       {

@@ -6,7 +6,7 @@
       "id": 1,
       "title": "넷플릭스 클론 사이트",
       "description": "React 라이브러리 활용, 오픈 API활용",
-      "image": "/images/clone/clone01.png",
+      "image": "/images/Clone/clone01.png",
       "links": {
         "github": "GitHub 링크",
         "site": "SITE 링크"
@@ -16,7 +16,7 @@
       "id": 2,
       "title": "Momentum 클론",
       "description": "날씨 API 활용, 다크모드, 라이트모드",
-      "image": "/images/clone/clone02.png",
+      "image": "/images/Clone/clone02.png",
       "links": {
         "github": "https://github.com/eun1013/myday",
         "site": "https://eun1013.github.io/myday/"
@@ -26,7 +26,7 @@
       "id": 3,
       "title": "에어비앤비 클론 사이트",
       "description": "반응형, UI 디자인 재현",
-      "image": "/images/clone/clone03.png",
+      "image": "/images/Clone/clone03.png",
       "links": {
         "github": "https://github.com/eun1013/eun1013.github.io/tree/main/airbnb",
         "site": "https://eun1013.github.io/airbnb/index.html"
@@ -36,7 +36,7 @@
       "id": 4,
       "title": "TESLA 클론 사이트",
       "description": "반응형, UI디자인 재현",
-      "image": "/images/clone/clone04.png",
+      "image": "/images/Clone/clone04.png",
       "links": {
         "github": "https://github.com/eun1013/eun1013.github.io/tree/main/tesla",
         "site": "https://eun1013.github.io/tesla/index.html"
