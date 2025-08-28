@@ -102,7 +102,7 @@ const CloneCoding = () => {
             key={idx}
             className="project-card">
               <div className="card-name">
-                <h2>{project.id}</h2>
+                <h2>{project.num}</h2>
                 <div>
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>

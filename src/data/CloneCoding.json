@@ -4,6 +4,7 @@
   "projects": [
     {
       "id": 1,
+      "num": "01",
       "title": "넷플릭스 클론 사이트",
       "description": "React 라이브러리 활용, 오픈 API활용",
       "image": "/images/Clone/clone01.png",
@@ -14,6 +15,7 @@
     },
     {
       "id": 2,
+      "num": "02",
       "title": "Momentum 클론",
       "description": "날씨 API 활용, 다크모드, 라이트모드",
       "image": "/images/Clone/clone02.png",
@@ -24,6 +26,7 @@
     },
     {
       "id": 3,
+      "num": "03",
       "title": "에어비앤비 클론 사이트",
       "description": "반응형, UI 디자인 재현",
       "image": "/images/Clone/clone03.png",
@@ -34,6 +37,7 @@
     },
     {
       "id": 4,
+      "num": "04",
       "title": "TESLA 클론 사이트",
       "description": "반응형, UI디자인 재현",
       "image": "/images/Clone/clone04.png",
