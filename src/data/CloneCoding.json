@@ -8,8 +8,8 @@
       "description": "React 라이브러리 활용, 오픈 API활용",
       "image": "/images/Clone/clone01.png",
       "links": {
-        "github": "GitHub 링크",
-        "site": "SITE 링크"
+        "github": "https://github.com/eun1013/netflix",
+        "site": "https://eun1013.github.io/netflix/"
       }
     },
     {
