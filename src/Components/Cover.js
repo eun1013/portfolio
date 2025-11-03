@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { FaBars } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -7,11 +6,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Cover = () => {
-  // 애니메이션할 요소들 참조
   const titleRef = useRef(null);
   const imgRef = useRef(null);
   const portfolioRef = useRef(null);
-  const menubarRef = useRef(null);
   const navigate = useNavigate('');
   
 useEffect(() => {
@@ -21,34 +18,34 @@ useEffect(() => {
       const tl = gsap.timeline();
 
       // 타이틀 애니메이션
-      tl.fromTo(titleRef.current, 
-        {y: -100, opacity: 0},
-        {y: 0, opacity: 1, duration: 3, ease: "power3.out", delay: 0.2}
+      tl.fromTo(imgRef.current, 
+        {x: 100, opacity: 0},
+        {x: 0, opacity: 1, duration: 3, ease: "power3.out", delay: 0.2}
       );
       
       // 이미지 애니메이션 (타이틀 애니메이션 2.5초 전에 시작)
-      tl.fromTo(imgRef.current,
-        {y: 50, opacity: 0},
-        {y: 0, opacity: 1, duration: 2, ease: "power3.out"},
+      tl.fromTo(titleRef.current,
+        {x: 50, opacity: 0},
+        {x: 0, opacity: 1, duration: 2, ease: "power3.out"},
         "-=2.5"
       );
       tl.fromTo(portfolioRef.current,
         {y: 50, opacity: 0},
         {y: 0, opacity: 1, duration: 2, ease: "power3.out"},
-        "-=3"
+        "-=2"
       );
     }
   }, []);
 
   return (
     <div className="cover">
-        <h3 ref={titleRef}>사용자의 마음에 공감하고<br/> 꼼꼼하게 설계하는 프론트엔드 개발자 장성은 입니다.</h3>
         <img
         ref={imgRef} 
-        src={`${process.env.PUBLIC_URL}/images/8617903.png`}
-        alt="커버 본인 이미지"
+        src={`${process.env.PUBLIC_URL}/images/title/title01.png`}
+        alt="PORTFOLIO 로고 이미지"
         />
-        <p ref={portfolioRef}>PORTFOLIO</p>
+        <h3 ref={titleRef}>사용자의 마음에 따뜻하게 공감하고<br/> 꼼꼼하게 설계하는 프론트엔드 개발자 장성은 입니다</h3>
+        <p ref={portfolioRef}>*  텍스쳐는 AI를 활용해 제작하였습니다</p>
     </div>
   );
 };

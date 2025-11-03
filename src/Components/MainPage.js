@@ -1,4 +1,3 @@
-
 import Cover from "./Cover";
 import Aboutme from "./Aboutme/Aboutme";
 import AboutmeQnA from "./Aboutme/AboutmeQnA";
@@ -6,13 +5,12 @@ import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import CloneCoding from "./Clone/CloneCoding";
 import Close from "./Close";
-import Practical from "./Practical";
+import Practical from "./Practical/Practical";
 import { useEffect } from "react";
-
 
 const MainPage = ({ scrollTarget }) => {
 
-    useEffect(() => {
+  useEffect(() => {
     if (scrollTarget) {
       const section = document.getElementById(scrollTarget);
       if (section) {
@@ -24,23 +22,23 @@ const MainPage = ({ scrollTarget }) => {
   return (
     <div className="mainpage">
       <div id="home">
-      <Cover/>
+        <Cover />
       </div>
       <div id="aboutme">
-      <Aboutme />
-      <AboutmeQnA />
-      <Skills />
+        <Aboutme />
+        <AboutmeQnA />
+        <Skills />
       </div>
       <div id="project">
-      <Projects />
+        <Projects />
       </div>
       <div id="clone">
-      <CloneCoding/>
+        <CloneCoding />
       </div>
       <div id="practical">
-      <Practical/>
+        <Practical />
       </div>
-      <Close/>
+      <Close />
     </div>
   );
 };

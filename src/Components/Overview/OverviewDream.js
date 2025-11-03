@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import DreamData from "../../data/OverviewDream.json";
-import { GiCancel } from "react-icons/gi";
+import { AiFillCloseSquare } from "react-icons/ai";
 import  React, { useEffect } from "react";
 
 const OverviewDream = () => {
@@ -13,9 +13,10 @@ const OverviewDream = () => {
 
   return (
     <div className="overviewDream">
+    <div className="overview-Dream">
       <button
       onClick={()=>{navigate('/')}} 
-      className="cancel-btn"><GiCancel/></button>
+      className="cancel-btn"><AiFillCloseSquare /></button>
       {/* Overview */}
       <section>
         <h1>{project.overview.title}</h1>
@@ -36,9 +37,11 @@ const OverviewDream = () => {
               </div>
             ))}
           </div>
+          <a href={project.overview.site} target="_blank">
           <img
+          className="overview-img"
           src={`${process.env.PUBLIC_URL}${project.overview.image_file}`}
-          alt="드림랜드 pc버전 예시 이미지"/>
+          alt="드림랜드 pc버전 예시 이미지"/></a>
         </div>
       </section>
 
@@ -47,7 +50,7 @@ const OverviewDream = () => {
       <section className="overview-design">
         {project.design_system.sections.map((sec, idx) => (
           <div key={idx}>
-            <h2>{sec.subtitle}</h2>
+            <h2 className="design-title">{sec.subtitle}</h2>
             {sec.colors && (
               <div className="design-color">
                 {sec.colors.map((color, i) => (
@@ -88,7 +91,7 @@ const OverviewDream = () => {
 
       {/* Retrospective */}
       <section>
-        <h1>{project.retrospective.title}</h1>
+        <h1 className="solution-title">{project.retrospective.title}</h1>
         <div className="overview-solution">
         {project.retrospective.sections.map((sec, idx) => (
           <div 
@@ -107,6 +110,7 @@ const OverviewDream = () => {
         ))}
         </div>
       </section>
+    </div>
     </div>
   );
 }
