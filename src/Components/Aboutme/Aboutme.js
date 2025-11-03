@@ -88,7 +88,7 @@ const Aboutme = () => {
           />
           <p ref={about1Ref} className="about-me-info">사용자 중심의 사고로 완성도를 추구하며<br />
             협업과 소통을 통해 끊임없이 성장하는<br />
-            웹디자이너 장성은 입니다</p>
+            프론트엔드 개발자 장성은 입니다</p>
         </div>
       </div>
     </div>

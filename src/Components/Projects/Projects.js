@@ -17,21 +17,6 @@ const Projects = () => {
             <div
               key={idx}
               className="projects-main">
-              <div className="projects-img">
-                {item.images.mobile && (
-                  <img
-                    className="mobile-img"
-                    src={`${process.env.PUBLIC_URL}${item.images.mobile}`}
-                    alt={item.images.mobilealt}
-                  ></img>
-                )}
-                {item.images.desktop && (
-                  <img
-                    className="desktop-img"
-                    src={`${process.env.PUBLIC_URL}${item.images.desktop}`}
-                    alt={item.images.desktopalt}
-                  ></img>)}
-              </div>
               <div className="projects-info-wrap">
               <div className="projects-info">
                 <h2>{item.projectName}</h2>
@@ -71,6 +56,21 @@ const Projects = () => {
                   <p>{item.role}</p>
                 </div>
               </div>
+              </div>
+                            <div className="projects-img">
+                {item.images.mobile && (
+                  <img
+                    className="mobile-img"
+                    src={`${process.env.PUBLIC_URL}${item.images.mobile}`}
+                    alt={item.images.mobilealt}
+                  ></img>
+                )}
+                {item.images.desktop && (
+                  <img
+                    className="desktop-img"
+                    src={`${process.env.PUBLIC_URL}${item.images.desktop}`}
+                    alt={item.images.desktopalt}
+                  ></img>)}
               </div>
             </div>
           )
