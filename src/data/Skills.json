@@ -48,7 +48,7 @@
       {
         "imageUrl": "/images/Skills/reacticon.png",
         "alt" : "리액트 아이콘 이미지",
-        "description": "웹 프로젝트에서 React.js를 활용하여 동적인 UI/UX 구현에 참여하며, 디자인과 개발 간의 효율적인 소통 및 시너지를 지향합니다"
+        "description": "웹 프로젝트에서 React.js를 활용하여 동적인 UI/UX 구현에 참여하며, 디자인과 개발 간의 효율적인 소통 및 시너지를 지향합니다."
       },
       {
         "imageUrl": "/images/Skills/supabaseicon.png",
@@ -69,7 +69,7 @@
       {
         "imageUrl":"/images/Skills/slackicon.png",
         "alt" : "슬랙 아이콘 이미지",
-        "description": "협업 도구인 Slack을 활용하여 디자인-개발 간 원활한 소통과 파일 공유를 통해 효율적인 프로젝트 관리 및 진행에 기여합니다"
+        "description": "협업 도구인 Slack을 활용하여 디자인-개발 간 원활한 소통과 파일 공유를 통해 효율적인 프로젝트 관리 및 진행에 기여합니다."
       }
     ]
   }

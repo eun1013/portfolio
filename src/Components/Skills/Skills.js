@@ -10,14 +10,17 @@ const Skills = () => {
 
   return (
     <div className="skills">
-      <h1>SKILLS</h1>
+            <img
+        className="aboutme-img"
+        src={`${process.env.PUBLIC_URL}/images/title/title04.png`}
+        alt="skills 로고 이미지"
+      />
       <div className="skills-section">
         <div className='line-bar'></div>
         <div className="main-category-tabs">
           {SkillsData.map((category, idx) => (
             <button
               key={idx}
-              // 현재 활성화된 카테고리 버튼에 'active' 클래스 추가
               className={idx === activeCategoryIndex ? 'active' : ''}
               onClick={() => setActiveCategoryIndex(idx)}>
               {category.mainCategory}
@@ -26,7 +29,7 @@ const Skills = () => {
         </div>
         {currentCategory && ( 
           <div className="category-details">
-            <h2>{currentCategory.subCategory}</h2>
+            <h2 className='category-title'>{currentCategory.subCategory}</h2>
               {currentCategory.items.map((item, itemIdx) => (
                 <div key={itemIdx} className="item-card">
                   <img

@@ -2,6 +2,7 @@ import data from "../../data/CloneCoding.json"; // JSON 경로
 import cloneData from "../../data/Clone.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { AiFillCloseSquare } from "react-icons/ai";
 
 // Swiper 스타일
 import "swiper/css";
@@ -17,9 +18,9 @@ const ProjectPopup = ({ project, onClose }) => {
   return (
     <div className="popup">
       <div className="popup-overlay">
+        <button className="close-btn" onClick={onClose}><AiFillCloseSquare /></button>
         <div className="project-popup">
-          <button className="close-btn" onClick={onClose}>×</button>
-          <h2>{project.title}</h2>
+          <h2>{project.num}. {project.title}</h2>
           {project.sections.map((section, index) => (
             <div key={index} className="popup-section">
               <h3>{section.subtitle}</h3>
@@ -42,14 +43,14 @@ const ProjectPopup = ({ project, onClose }) => {
             </div>
           ))}
         </div>
-        <a 
-        className="popup-image"
-        href={project.link}>
-        <img
-          src={`${process.env.PUBLIC_URL}${project.image}`}
-          alt={project.title}
-          
-        />
+        <a
+          className="popup-image"
+          href={project.link}
+          target="_blank">
+          <img
+            src={`${process.env.PUBLIC_URL}${project.image}`}
+            alt={project.title}
+          />
         </a>
       </div>
     </div>
@@ -77,8 +78,14 @@ const CloneCoding = () => {
 
   return (
     <div className="clone">
-      <h1>{data.mainTitle}</h1>
-      <p className="clone-des">{data.mainDescription}</p>
+      <div className="clone-logr-wrap">
+        <img
+          className="clone-logo"
+          src={`${process.env.PUBLIC_URL}/images/title/title06.png`}
+          alt="clonecoding 로고 이미지"
+        />
+        <p className="clone-des">{data.mainDescription}</p>
+      </div>
 
       <Swiper
         className="projects-list"
@@ -96,11 +103,11 @@ const CloneCoding = () => {
           1024: { slidesPerView: 3 },
         }}
       >
-        {data.projects.map((project,idx) => (
+        {data.projects.map((project, idx) => (
           <SwiperSlide key={project.id}>
-            <div 
-            key={idx}
-            className="project-card">
+            <div
+              key={idx}
+              className="project-card">
               <div className="card-name">
                 <h2>{project.num}</h2>
                 <div>
@@ -146,6 +153,7 @@ const CloneCoding = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
       {/* 팝업 */}
       {selectedProject && (
         <ProjectPopup

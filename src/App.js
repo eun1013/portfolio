@@ -3,24 +3,21 @@ import "./App.scss";
 
 import OverviewDream from "./Components/Overview/OverviewDream";
 import OverviewSodam from "./Components/Overview/OverviewSodam";
-import OverviewHello from "./Components/Overview/OverviewHello";
-import OverviewQuiz from "./Components/Overview/OverviewQuiz";
-import OverviewBlog from "./Components/Overview/OverviewBlog";
-import OverviewFigma from "./Components/Overview/OverviewFigma";
 import MainLayout from "./Components/MainLayout";
+import OverviewLittle from "./Components/Overview/OverviewLittle";
+import OverviewGG from "./Components/Overview/OverviewGG";
+import MainPage from "./Components/MainPage";
+
 
 const App = () => {
   return (
     <BrowserRouter scrollRestoration="manual">
       <Routes>
         <Route path="/*" element={<MainLayout/>}/>
+        <Route path="overviewLittle" element={<OverviewLittle/>}/>
+        <Route path="overviewGG" element={<OverviewGG/>}/>
         <Route path="/overviewDream" element={<OverviewDream/>}/>
         <Route path="/overviewSodam" element={<OverviewSodam/>}/>
-        <Route path="/overviewHello" element={<OverviewHello/>}/>
-        <Route path="/overviewQuiz" element={<OverviewQuiz/>}/>
-        <Route path="/overviewBlog" element={<OverviewBlog/>}/>
-        <Route path="/overviewFigma" element={<OverviewFigma/>}/>
-        {/* <Route path="*" element={<MainLayout/>}/>  */}
       </Routes>
     </BrowserRouter>
   );

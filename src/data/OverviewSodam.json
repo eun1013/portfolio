@@ -2,7 +2,8 @@
   "main_project_1": {
     "overview": {
       "title": "OVERVIEW",
-      "image_file": "/images/overview/images02.png",
+      "image_file": "/images/overview/images05.png",
+      "site": "https://eun1013.github.io/sodamshop/",
       "sections": [
         {
         "title": "프로젝트 목표",
@@ -43,16 +44,13 @@
           "subtitle": "Font Styles",
           "fonts": [
             {
-              "name": "한글 폰트 : Inter",
-              "description": "한글은 가독성과 조형미를 모두 고려했습니다."
-            },
-            { 
-              "name": "영문 폰트 : Poppins",
-              "description": "한글과 영문의 균형이 잘 맞는 산세리프 계열로 사용했습니다."
-            }
-          ]
+              "name":"한글 폰트 / Inter",
+              "name2" :"영문 폰트/Poppins",
+              "description": "한글은 가독성과 조형미를 모두 고려했습니다. 한글과 영문의 균형이 잘 맞는 산세리프 계열로 사용했습니다."
         }
       ]
+    }
+  ]
     },
     "user_flow": {
       "title": "USER FLOW",

@@ -1,15 +1,10 @@
 //global.scss
+@import "./fonts.scss";
 @import "./reset.scss";
 @import "./mixin.scss";
 @import "./variable.scss";
 
 //font
-@font-face {
-    font-family: 'Paperlogy-8ExtraBold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -19,11 +14,11 @@
 }
 
 html{ font-size: 62.5%;
-background-color: var(--color-primary); }
+}
+
 body{
-    font-family: 'Paperlogy-8ExtraBold', sans-serif;
-    font-weight: 700; //기본 두께(변경 가능)
-    height: 100%;
+    font-family: 'Paperozi', sans-serif;
+    font-weight: 700; 
     width: 100%;
     // overflow: hidden;
 }
