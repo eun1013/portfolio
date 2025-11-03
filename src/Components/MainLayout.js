@@ -40,7 +40,7 @@ const MainLayout = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (location.pathname === '/portfolio') {
+            if (location.pathname === '/portfolio/') {
                 if (window.scrollY > window.innerHeight * 0.5) {
                     setShowScrollToTopButton(true);
                 } else {
