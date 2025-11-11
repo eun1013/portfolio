@@ -68,7 +68,7 @@
     "projectName": "소담 상점",
     "projectType": "팀 프로젝트",
     "links": {
-      "overview": "overviewSodam",
+      "overview": "/overviewSodam",
       "github": "https://github.com/eun1013/sodamshop",
       "site": "https://eun1013.github.io/sodamshop/"
     },

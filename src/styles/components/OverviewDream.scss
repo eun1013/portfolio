@@ -14,23 +14,6 @@
     right: 0;
     border-radius: 20px;
 
-    .cancel-btn {
-      position: absolute;
-      top: 0;
-      right: 3rem;
-      font-size: 4rem;
-      margin-top: 2rem;
-      color: var(--color-primary);
-      z-index: 100;
-
-      &:hover {
-        scale: 1.1;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        color: #1a1a19ce;
-      }
-    }
-
     h1 {
       @include font-h2;
       color: var(--color-primary);
@@ -38,12 +21,13 @@
     }
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: var(--color-primary);
     }
 
     p {
-      @include font-body-s;
+      font-size: 1.5rem;
+      line-height: 2;
       font-weight: 600;
       word-break: keep-all;
       padding: 0.5rem 0;
@@ -55,6 +39,7 @@
       word-break: keep-all;
     }
 
+
     .overview-project {
       @include flex-layout;
       padding-bottom: 8rem;
@@ -65,6 +50,9 @@
         padding-left: 6rem;
         line-height: 2;
 
+        li {
+          font-size: 1.5rem;
+        }
       }
 
       a {
@@ -115,8 +103,12 @@
 
         .font {
           font-family: 'Pretendard-Regular';
-          font-size: 2.3rem;
+          font-size: 2rem;
           font-weight: bolder;
+        }
+
+        li {
+          font-size: 1.5rem;
         }
       }
     }
@@ -131,7 +123,7 @@
     }
 
     .overview-solution {
-      height: 54.5rem;
+      height: 50rem;
       padding: 2rem 6rem;
       line-height: 2;
 
@@ -144,7 +136,7 @@
       }
 
       li {
-        @include font-body-s;
+        font-size: 1.5rem;
         line-height: 2;
       }
     }

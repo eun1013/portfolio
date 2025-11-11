@@ -6,7 +6,6 @@ import OverviewSodam from "./Components/Overview/OverviewSodam";
 import MainLayout from "./Components/MainLayout";
 import OverviewLittle from "./Components/Overview/OverviewLittle";
 import OverviewGG from "./Components/Overview/OverviewGG";
-import MainPage from "./Components/MainPage";
 
 
 const App = () => {
@@ -14,8 +13,8 @@ const App = () => {
     <BrowserRouter scrollRestoration="manual">
       <Routes>
         <Route path="/*" element={<MainLayout/>}/>
-        <Route path="overviewLittle" element={<OverviewLittle/>}/>
-        <Route path="overviewGG" element={<OverviewGG/>}/>
+        <Route path="/overviewLittle" element={<OverviewLittle/>}/>
+        <Route path="/overviewGG" element={<OverviewGG/>}/>
         <Route path="/overviewDream" element={<OverviewDream/>}/>
         <Route path="/overviewSodam" element={<OverviewSodam/>}/>
       </Routes>

@@ -14,23 +14,6 @@
     right: 0;
     border-radius: 20px;
 
-    .cancel-btn {
-      position: absolute;
-      top: 0;
-      right: 3rem;
-      font-size: 4rem;
-      margin-top: 2rem;
-      color: var(--color-primary);
-      z-index: 100;
-
-      &:hover {
-        scale: 1.1;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        color: #1a1a19ce;
-      }
-    }
-
     h1 {
       @include font-h2;
       color: var(--color-primary);
@@ -76,7 +59,7 @@
         width: 100%;
 
         &:hover {
-          scale: 1.1;
+          scale: 1;
           transition: all 0.3s ease;
           cursor: pointer;
 
@@ -85,7 +68,7 @@
     }
   }
     .design-wrap {
-      width: 74%;
+      width: 70%;
 
       .design-title {
         padding-top: 3rem;
