@@ -14,23 +14,6 @@
     right: 0;
     border-radius: 20px;
 
-    .cancel-btn {
-      position: absolute;
-      top: 0;
-      right: 3rem;
-      font-size: 4rem;
-      margin-top: 2rem;
-      color: var(--color-primary);
-      z-index: 100;
-
-      &:hover {
-        scale: 1.1;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        color: #1a1a19ce;
-      }
-    }
-
     h1 {
       @include font-h2;
       color: var(--color-primary);
@@ -38,12 +21,13 @@
     }
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: var(--color-primary);
     }
 
     p {
-      @include font-body-s;
+      font-size: 1.5rem;
+      line-height: 2;
       font-weight: 600;
       word-break: keep-all;
       padding: 0.5rem 0;
@@ -54,6 +38,7 @@
       font-weight: 600;
       word-break: keep-all;
     }
+
 
     .overview-project {
       @include flex-layout;
@@ -66,7 +51,8 @@
         line-height: 2;
 
         li {
-          @include font-body-s;
+          font-size: 1.5rem;
+          line-height: 2;
         }
       }
 
@@ -85,19 +71,14 @@
       }
     }
 
-    .design-wrap {
-      width: 74%;
-
-      .design-title {
-        padding-top: 3rem;
-      }
+    .design-title {
+      padding-top: 3rem;
     }
 
     .overview-design {
       padding: 3rem 5rem;
       line-height: 2;
       padding-bottom: 5rem;
-      width: 100%;
 
       .design-color {
         display: flex;
@@ -113,7 +94,6 @@
             scale: 1.1;
             transition: all 0.3s ease;
             cursor: pointer;
-
           }
         }
       }
@@ -124,7 +104,7 @@
 
         .font {
           font-family: 'Pretendard-Regular';
-          font-size: 2.3rem;
+          font-size: 2rem;
           font-weight: bolder;
         }
 
@@ -147,16 +127,16 @@
 
         li {
           font-family: "Paperozi";
-          @include font-body-s;
+          font-size: 1.5rem;
+          line-height: 2;
           font-weight: 600;
         }
       }
     }
 
-
     .overview-user {
       width: 80%;
-      margin: 8rem auto;
+      margin: 5rem auto;
 
       img {
         width: 100%;
@@ -164,10 +144,21 @@
     }
 
     .overview-solution {
-      padding: 6rem;
+      height: 50rem;
+      padding: 2rem 6rem;
       line-height: 2;
-      li{
-        @include font-body-s;
+
+      h2 {
+        padding: 0.5rem 0;
+      }
+
+      p {
+        padding: 1rem 0;
+      }
+
+      li {
+        font-size: 1.5rem;
+        line-height: 2;
       }
     }
   }

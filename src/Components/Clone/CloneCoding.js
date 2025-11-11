@@ -1,10 +1,9 @@
-import data from "../../data/CloneCoding.json"; // JSON 경로
+import data from "../../data/CloneCoding.json";
 import cloneData from "../../data/Clone.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { AiFillCloseSquare } from "react-icons/ai";
 
-// Swiper 스타일
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -58,20 +57,16 @@ const ProjectPopup = ({ project, onClose }) => {
 };
 
 const CloneCoding = () => {
-  // 선택된 프로젝트 번호 저장 (number 필드 기준)
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // 프로젝트 클릭 시 해당 프로젝트 선택
   const handleClick = (projectNumber) => {
     setSelectedProject(projectNumber);
   };
 
-  // 팝업 닫기
   const closePopup = () => {
     setSelectedProject(null);
   };
 
-  // 선택된 프로젝트 데이터 찾기
   const selectedProjectData = selectedProject
     ? cloneData.find(project => project.number === selectedProject)
     : null;

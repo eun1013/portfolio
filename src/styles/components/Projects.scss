@@ -30,12 +30,12 @@
         position: absolute;
         width: 24rem;
         top: -1rem;
-        left: 0;
+        left: 10rem;
       }
 
       .desktop-img {
-        width: 80%;
-        margin-left: 5rem;
+        width: 75%;
+        margin-left: 20rem;
         margin-top: 3rem;
       }
     }
@@ -44,8 +44,8 @@
       width: 52rem;
       height: 50rem;
       background-color: var(--color-sub);
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
 
       .projects-info {
         flex: 1;

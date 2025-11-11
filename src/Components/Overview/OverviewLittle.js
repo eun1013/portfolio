@@ -1,22 +1,12 @@
-import { useNavigate } from "react-router-dom";
 import little from "../../data/OverviewLittle.json";
-import { AiFillCloseSquare } from "react-icons/ai";
-import  React, { useEffect } from "react";
+import  React from "react";
 
 const OverviewLittle = () => {
   const project = little.main_project_1;
-  const navigate = useNavigate('');
-
-    useEffect(()=>{
-        window.scrollTo(0,0);
-    },[]);
 
   return (
     <div className="overviewDream">
     <div className="overview-Dream">
-      <button
-      onClick={()=>{navigate('/')}} 
-      className="cancel-btn"><AiFillCloseSquare /></button>
       {/* Overview */}
       <section>
         <h1>{project.overview.title}</h1>

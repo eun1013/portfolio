@@ -1,7 +1,26 @@
+import React, { useState } from 'react';
 import ProjectData from "../../data/project.json";
-import { Link } from 'react-router-dom';
+import OverviewSodam from '../Overview/OverviewSodam';
+import OverviewGG from '../Overview/OverviewGG';
+import OverviewDream from '../Overview/OverviewDream';
+import OverviewLittle from '../Overview/OverviewLittle';
+import Modal from '../Projects/Modal';
 
 const Projects = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedOverviewType, setSelectedOverviewType] = useState(null);
+
+  const openModal = (overviewPath) => {
+    setIsModalOpen(true);
+    const type = overviewPath.replace('/overview', '');
+    setSelectedOverviewType(type);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedOverviewType(null); 
+  };
+
   return (
     <div className="projects">
       <div className="projects-logo-wrap">
@@ -17,21 +36,6 @@ const Projects = () => {
             <div
               key={idx}
               className="projects-main">
-              <div className="projects-img">
-                {item.images.mobile && (
-                  <img
-                    className="mobile-img"
-                    src={`${process.env.PUBLIC_URL}${item.images.mobile}`}
-                    alt={item.images.mobilealt}
-                  ></img>
-                )}
-                {item.images.desktop && (
-                  <img
-                    className="desktop-img"
-                    src={`${process.env.PUBLIC_URL}${item.images.desktop}`}
-                    alt={item.images.desktopalt}
-                  ></img>)}
-              </div>
               <div className="projects-info-wrap">
               <div className="projects-info">
                 <h2>{item.projectName}</h2>
@@ -39,13 +43,13 @@ const Projects = () => {
                 <h3>{item.projectType}</h3>
                 <div className="link-btn">
                   {item.links.overview && (
-                    <button>
-                      <Link to={item.links.overview}>OVERVIEW</Link>
+                    <button onClick={() => openModal(item.links.overview)}>
+                      OVERVIEW
                     </button>
                   )}
                   {item.links.github && (
                     <button>
-                      <a href={item.links.github} target="_blank">
+                      <a href={item.links.github} target="_blank" rel="noopener noreferrer"> {/* rel="noopener noreferrer" 추가 권장! */}
                         GITHUB 링크
                       </a>
                     </button>
@@ -53,7 +57,7 @@ const Projects = () => {
 
                   {item.links.site && (
                     <button>
-                      <a href={item.links.site} target="_blank">
+                      <a href={item.links.site} target="_blank" rel="noopener noreferrer"> {/* rel="noopener noreferrer" 추가 권장! */}
                         SITE 링크
                       </a>
                     </button>
@@ -72,14 +76,37 @@ const Projects = () => {
                 </div>
               </div>
               </div>
+                            <div className="projects-img">
+                {item.images.mobile && (
+                  <img
+                    className="mobile-img"
+                    src={`${process.env.PUBLIC_URL}${item.images.mobile}`}
+                    alt={item.images.mobilealt}
+                  ></img>
+                )}
+                {item.images.desktop && (
+                  <img
+                    className="desktop-img"
+                    src={`${process.env.PUBLIC_URL}${item.images.desktop}`}
+                    alt={item.images.desktopalt}
+                  ></img>)}
+              </div>
             </div>
           )
         })
       }
 
-    </div>
+      {isModalOpen && (
+        <Modal onClose={closeModal}>
+          {selectedOverviewType === 'Sodam' && <OverviewSodam/>}
+          {selectedOverviewType === 'GG' && <OverviewGG />}
+          {selectedOverviewType === 'Dream' && <OverviewDream />}
+          {selectedOverviewType === 'Little' && <OverviewLittle />}
+        </Modal>
+      )}
 
-  );
-};
+    </div>
+  )
+}
 
 export default Projects;
