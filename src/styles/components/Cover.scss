@@ -12,9 +12,8 @@
     h3 {
         color: var(--color-sub);
         @include font-h3;
-        text-align: right;
+        text-align: center;
         padding-bottom: 15rem;
-        padding-left: 59rem;
     }
 
     p {
