@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import MenuBar from "./MenuBar";
 import MainPage from "./MainPage";
+import OverviewSodam from "./Overview/OverviewSodam";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { useLocation } from "react-router-dom";
 import { FaArrowAltCircleUp } from "react-icons/fa";
+import OverviewGG from "./Overview/OverviewGG";
+import OverviewDream from "./Overview/OverviewDream";
+import OverviewLittle from "./Overview/OverviewLittle";
 import { ReactComponent as TitleIcon } from "../icons/titleIcon.svg";
-import Projects from "./Projects/Projects";
 
 const MainLayout = () => {
     const [scrollTarget, setScrollTarget] = useState(null);
@@ -59,8 +62,17 @@ const MainLayout = () => {
     };
 
     const renderContent = () => {
-        if (location.pathname === '/portfolio') {
-            return <Projects />;
+        if (location.pathname === '/overviewSodam') {
+            return <OverviewSodam />;
+        }
+        if (location.pathname === '/overviewGG') {
+            return <OverviewGG />;
+        }
+        if (location.pathname === '/overviewDream') {
+            return <OverviewDream />;
+        }
+        if (location.pathname === '/overviewLittle') {
+            return <OverviewLittle />;
         }
         return <MainPage scrollTarget={scrollTarget} />;
     };
